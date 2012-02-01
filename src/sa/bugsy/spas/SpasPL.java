@@ -14,7 +14,7 @@ public class SpasPL extends PlayerListener {
 	}
 	public void onPlayerJoin(PlayerJoinEvent e){
 		Player player = e.getPlayer();
-		player.sendMessage("§4Type \"/password <your_pass>\" to register or join.");
+		player.sendMessage("ï¿½4Type \"/password <your_pass>\" to register or join.");
 	}
 	public void onPlayerCommandPreprocess(PlayerCommandPreprocessEvent e){
 		Player player = e.getPlayer();
@@ -36,11 +36,11 @@ public class SpasPL extends PlayerListener {
 				prop2.put(player.getName(), "true");
 				prop2.save(start2);
 				e.setCancelled(false);
-				player.sendMessage("§4Password set. Horray!");
+				player.sendMessage("ï¿½4Palid password Horray!");
 			}else{
 				e.setCancelled(true);
-				player.sendMessage("§4Incorrect password");
-				player.sendMessage("§4Type \"/password <your_password>\" again");
+				player.sendMessage("ï¿½4Incorrect password");
+				player.sendMessage("ï¿½4Type \"/password <your_password>\" again");
 			}
 			
 		}else{
@@ -52,8 +52,8 @@ public class SpasPL extends PlayerListener {
 					e.setCancelled(false);
 				}else{
 					e.setCancelled(true);
-					player.sendMessage("§4You are not Allowed to use commands");
-					player.sendMessage("§4Type \"/password <your_password>\" to register or join");
+					player.sendMessage("ï¿½4You are not Allowed to use commands");
+					player.sendMessage("ï¿½4Type \"/password <your_password>\" to register or join");
 				}
 			}else{
 				e.setCancelled(false);
